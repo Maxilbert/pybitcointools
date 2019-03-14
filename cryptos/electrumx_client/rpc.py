@@ -138,6 +138,7 @@ class ElectrumXClient(RPCClient):
             addr = result['params'][0]
             for u in unspent_for_addr:
                 u['address'] = addr
+                u['output'] = u['tx_hash'] + ':' + str(u['tx_pos'])
                 unspents.append(u)
         return unspents
 

@@ -4,12 +4,6 @@ REPOSITORY HAS BEEN ARCHIVED AND IS NO LONGER MAINTAINED FOR NOW
 
 This is a fork of Vitalik Buterin's original [pybitcointools](https://github.com/vbuterin/pybitcointools) library.
 
-Installation:
-
-```bash
-pip install cryptos
-```
-
 Library now supports making and pushing raw transactions for:
 
 * Bitcoin mainnet

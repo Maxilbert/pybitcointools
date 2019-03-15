@@ -6,7 +6,7 @@ from .utils import parse_addr_args
 def get_url(coin_symbol):
     if coin_symbol == "BTC":
         return "https://blockchain.info"
-    return "https://api.blockcypher.com/v1/btc/test3/"
+    return "https://api.blockcypher.com/v1/btc/test3"
 
 sendtx_url = "%s/txs/push"
 address_url = "%s/address/%s?format=json"
@@ -76,6 +76,8 @@ def pushtx(tx, coin_symbol="BTC"):
                     'network': coin_symbol
                     }
                 }
+    else:
+        print(response.status_code)
     return response
 
 # Gets the transaction output history of a given set of addresses,
